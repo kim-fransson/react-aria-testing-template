@@ -6,8 +6,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   test: {
-    // This means we don't have to import `describe`,
-    // `it`, and `expect` into every test file
     globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/test/vitest-setup.ts",
   },
 });

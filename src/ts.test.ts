@@ -1,4 +1,4 @@
-describe("test setup", () => {
+describe("test ts setup", () => {
   it("works", () => {
     expect(true);
   });
