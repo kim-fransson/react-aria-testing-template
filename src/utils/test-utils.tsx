@@ -12,4 +12,5 @@ const customRender = (
 ) => render(ui, { wrapper: AllTheProviders, ...options });
 
 export * from "@testing-library/react";
+export * from "@react-aria/test-utils";
 export { customRender as render };
